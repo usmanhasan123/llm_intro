@@ -15,7 +15,7 @@ st.set_page_config(page_title="LangChain Demo for app 2", page_icon=":robot:")
 st.header("LangChain Demo for app 2")
 
 if "sessionMessages" not in st.session_state:
-    st.session_state.sessionMessages=[SystemMessage(content="Your name is Usman. You are a husband of someone called Adina")] # prompt
+    st.session_state.sessionMessages=[SystemMessage(content="You are a helpful AI assisstant")] # prompt
 
 chat = ChatOpenAI(openai_api_base="https://openrouter.ai/api/v1", openai_api_key= os.getenv("OPENAI_API_KEY"),
                  model="mistralai/Mistral-7B-Instruct", temperature=0.7)
