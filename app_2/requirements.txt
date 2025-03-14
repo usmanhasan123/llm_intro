@@ -1,0 +1,8 @@
+langchain
+langchain_community
+streamlit
+huggingface_hub
+numpy
+transformers
+torch
+accelerate
