@@ -3,7 +3,6 @@ import transformers
 import torch
 import accelerate
 import numpy
-from langchain_huggingface import ChatHuggingFace
 from langchain.llms import HuggingFaceHub
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
 import streamlit as st
