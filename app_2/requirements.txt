@@ -2,6 +2,7 @@ langchain
 langchain_community
 streamlit
 huggingface_hub
+openai
 numpy
 transformers
 torch
