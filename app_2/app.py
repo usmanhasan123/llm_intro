@@ -25,7 +25,7 @@ query=st.text_input("You: ", key="input")
 st.session_state.sessionMessages.append(HumanMessage(content=query))
 
 response=chat(st.session_state.sessionMessages)
-st.session_state.sessionMessages.append(AIMessage(content=response))
+st.session_state.sessionMessages.append(AIMessage(content=response.content))
 press=st.button("Generate response")
 if press:
     st.subheader("Answer")
