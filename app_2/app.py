@@ -29,6 +29,6 @@ st.session_state.sessionMessages.append(AIMessage(content=response.content))
 press=st.button("Generate response")
 if press:
     st.subheader("Answer")
-    st.write(response)
+    st.write(response.content)
 # response = chat.invoke("Tell me a joke!")
 # print(response.content)
