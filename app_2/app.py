@@ -15,7 +15,7 @@ from langchain.chat_models import ChatOpenAI
 st.set_page_config(page_title="LangChain Demo for app 2", page_icon=":robot:")
 st.header("LangChain Demo for app 2")
 
-is "sessionMessages" not in st.session_state:
+if "sessionMessages" not in st.session_state:
     st.session_state.sessionMessages=[SystemMessage(content="You are a helpful AI assisstant")] # prompt
 
 chat = ChatOpenAI(openai_api_base="https://openrouter.ai/api/v1", openai_api_key= os.getenv("OPENAI_API_KEY"),
