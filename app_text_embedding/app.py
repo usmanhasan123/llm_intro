@@ -5,6 +5,13 @@ import os
 import transformers
 import streamlit as st
 
+import numpy as np
+import pandas as pd
+import nltk
+nltk.download("punkt_tab")
+from nltk.tokenize import sent_tokenize
+from sklearn.metrics.pairwise import cosine_similarity
+
 embeddings=HuggingFaceHubEmbeddings()
 
 st.set_page_config("Langchain demo for text embeddings", page_icon=":robot:")
