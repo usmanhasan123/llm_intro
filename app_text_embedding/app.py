@@ -1,6 +1,6 @@
 import langchain
 import huggingface_hub
-from langchain.embeddings import HuggingFaceHubEmbeddings
+from langchain_community.embeddings import HuggingFaceHubEmbeddings
 import os
 import transformers
 import streamlit as st
