@@ -1,5 +1,4 @@
 import langchain
-import openai
 import huggingface_hub
 from langchain.embeddings import HuggingFaceHubEmbeddings
 import os
