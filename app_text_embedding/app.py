@@ -20,7 +20,7 @@ st.header("Langchain demo for text embeddings")
 embeddings=HuggingFaceHubEmbeddings()
 
 text=st.text_input("You: ", key="input")
-words=st.text_input("summary words: ", key="input")
+words=st.text_input("summary words: ", key="second_input")
 
 press=st.button("Generate summary")
 if press:
