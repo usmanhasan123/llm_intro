@@ -4,3 +4,4 @@ streamlit
 huggingface_hub
 nltk
 numpy
+transformers
