@@ -44,7 +44,7 @@ if press:
         df_sent=df_sent.sort_values(by="cos_sim_1", ascending=False)
         summary=""
         
-        for i in df_sent["sents"][:words]:
+        for i in df_sent["sents"][:int(words)]:
             summary=summary+i
             summary=summary+" "
     
