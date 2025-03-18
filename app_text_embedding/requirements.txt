@@ -5,4 +5,4 @@ huggingface_hub
 nltk
 numpy
 transformers
-sklearn 1.6.1
+sklearn
