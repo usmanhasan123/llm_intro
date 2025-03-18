@@ -3,7 +3,7 @@ import huggingface_hub
 from langchain.embeddings import HuggingFaceHubEmbeddings
 import os
 import transformers
-from streamlit import st
+import streamlit as st
 
 embeddings=HuggingFaceHubEmbeddings()
 
