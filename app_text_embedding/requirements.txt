@@ -1,0 +1,6 @@
+langchain
+langchain_community
+streamlit
+huggingface_hub
+nltk
+numpy
