@@ -7,3 +7,4 @@ numpy
 transformers
 scikit-learn
 langchain_huggingface
+sentence-transformers
