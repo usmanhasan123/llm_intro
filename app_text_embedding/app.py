@@ -1,6 +1,7 @@
 import langchain
 import huggingface_hub
-from langchain_community.embeddings import HuggingFaceHubEmbeddings
+# from langchain_community.embeddings import HuggingFaceHubEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 import transformers
 import streamlit as st
@@ -12,7 +13,7 @@ nltk.download("punkt_tab")
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
-embeddings=HuggingFaceHubEmbeddings(huggingfacehub_api_token=st.secrets["HUGGINGFACEHUB_API_TOKEN"], model="google/gemma-2-2b-it")
+embeddings=HuggingFaceEmbeddings(model="sentence-transformers/all-mpnet-base-v2")
 
 st.set_page_config("Langchain demo for text embeddings", page_icon=":robot:")
 st.header("Langchain demo for text embeddings")
