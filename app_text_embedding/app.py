@@ -12,6 +12,8 @@ nltk.download("punkt_tab")
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
+st.write("HUGGINGFACEHUB_API_TOKEN" in st.secrets)
+
 embeddings=HuggingFaceHubEmbeddings()
 
 st.set_page_config("Langchain demo for text embeddings", page_icon=":robot:")
