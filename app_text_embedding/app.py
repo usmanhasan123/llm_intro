@@ -12,7 +12,7 @@ nltk.download("punkt_tab")
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
-embeddings=HuggingFaceHubEmbeddings()
+embeddings=HuggingFaceHubEmbeddings(huggingfacehub_api_token=st.secrets["HUGGINGFACEHUB_API_TOKEN"], model="google/gemma-2-2b-it")
 
 st.set_page_config("Langchain demo for text embeddings", page_icon=":robot:")
 st.header("Langchain demo for text embeddings")
