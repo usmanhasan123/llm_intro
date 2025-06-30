@@ -12,14 +12,10 @@ nltk.download("punkt_tab")
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
-st.write(st.secrets)
-
 embeddings=HuggingFaceHubEmbeddings()
 
 st.set_page_config("Langchain demo for text embeddings", page_icon=":robot:")
 st.header("Langchain demo for text embeddings")
-
-embeddings=HuggingFaceHubEmbeddings()
 
 text=st.text_input("You: ", key="input")
 words=st.text_input("summary words: ", key="second_input")
