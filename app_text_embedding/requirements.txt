@@ -6,3 +6,4 @@ nltk
 numpy
 transformers
 scikit-learn
+os
