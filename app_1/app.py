@@ -1,6 +1,7 @@
 import streamlit as st
 import huggingface_hub
 from langchain.llms import HuggingFaceHub
+from langchain_community.llms import HuggingFaceHub
 import os
 
 # os.system("git clone https://github.com/usmanhasan123/llm_intro.git")
